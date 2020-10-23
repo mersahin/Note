@@ -1,1 +1,10 @@
 https://dwaves.de/tools/escape/
+
+
+
+var output1 = input.replace(/\\/g,"\\\\") /* \ -> \\ */
+	var output2 = output1.replace(/\//g,"\\\/") /* / -> \/ */
+	var output3 = output2.replace(/"/g,'\\"') /* " -> \" */
+	var output4 = output3.replace(/'/g,"\\x27") /* ' -> \x27 */
+	var output5 = output4.replace(/\[/g,"\\[") /* [ -> \[ */
+	var output6 = output5.replace(/\]/g,"\\]") /* ] -> \] */
